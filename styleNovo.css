@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.menuNav{
+    color: #0da2ec;
+    font-size: 18px;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+ul {
+    display: flex;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+section {
+    border-top: 0%;
+    min-height: 100vh;
+}
+
+.titulosSeção{
+    color: #185c7d;
+}
+
+/*-----------------------------------------------------------------------*/
+/*Sobre mim--------------------------------------------------------------*/
+#seçãoSobreMim {
+    background-image: url(imagem/Captura.png);
+    background-repeat: no-repeat;
+    padding: 2rem;
+    padding-left: 1rem;
+    /*para deixar a tela toda preenchida*/
+    /*background-color: rgba(240, 233, 233, 0.997);*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#tituloHed {
+    color: #10445e;
+    font-size: 2.5frem;
+}
+
+#fotoMinha {
+    margin: 5%;
+    max-width: 100%;
+}
+
+#textoSobreMim {
+    margin-left: 5%;
+    padding: 10%;
+}
+/*resumo profissional e curso -------------------------------------------------------------*/
+
+#seçãoResumoProfisional {
+    /*min-height: 100vh;*/
+    /*background: url(imagem/fundoResumoProfissional.jpg);*/
+    background-repeat: no-repeat;
+    background-color: #f6f6f6;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    padding-left: 2.5rem;
+    /*para deixar a tela toda preenchida*/
+    /*background-color: rgba(240, 233, 233, 0.997);*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#resumoProfisional-texto {
+    max-width: 30rem;
+}
+
+#resumoProfisional-Tabelas {
+    text-align: center;
+    /* text-align: center; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#tabela-cursos {
+    margin-bottom: 3rem;
+}
+
+.celula-cabeçalho-tabela {
+    background-color: #c0ced5;
+    color: #000000;
+    padding: 0.7rem;
+}
+
+.celula-corpo-tabelaRP {
+    padding: 0.7rem;
+    text-align: left;
+    background-color: #efefef;
+}
+
+.celula-corpo-tabelaRP-tipo1 {
+    background-color: rgb(207, 213, 211);
+    padding: 0.7rem;
+    text-align: left;
+}
+
+
+/*--------------------------------------------------------------*/
+/* Projetos -------------------------------------------------------------*/
+
+#seçãoProjetos {
+    display: flex;
+    background: url(imagem/Captura.png);
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-img-Projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.linha123 {
+    margin: 1rem;
+    padding: 1px;
+    min-width: 100%;
+    background-color: black;
+
+}
+
+.projeto-lista-OL {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+    padding: 0.5%;
+}
+
+.projetos-lista-LI {
+    background-color: #daeaf2;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.download-bot {
+    margin: 0.7rem;
+    padding: 0.5rem;
+    border: 0.1rem solid black;
+    border-radius: 20px;
+}
+
+.download-bot:hover {
+    background-color: black;
+    color: #efefef;
+}
+
+
+
+/*---------------------------------------------------------------------------------*/
+/* entre em conttato  -------------------------------------------------------------*/
+
+#contatos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+#iframeDiv {
+    max-width: 40%;
+}
+
+#formulario-contato {
+    width: 60%;
+    padding: 10PX;
+    margin-left: 20%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.IDinputContatos {
+    max-width: 100%;
+    min-width: 100%;
+    margin: 1%;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 0.3rem solid #3aaae290;
+    background-color:  #f6f6f6;
+
+}
+
+#BotãoEnviar {
+    border: none;
+    width: 50%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color:#3aaae290;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+#BotãoEnviar:hover{
+    background-color: #5a93d8;
+    color: rgb(0, 0, 0);
+    transform: scale(1.1)
+
+}
+iframe {
+    width: 40%;
+    height: 30rem;
+}
+
+
+/*--------------------------------------------------------------*/
+
+
+
+
+#telefonesFooter p{
+    display: flex;
+    align-items: center;
+    margin-top:1em;
+}
+
+footer{
+    display:flex;
+    background-color:#f6f6f6;
+    justify-content:space-around;
+    padding:3em 0em;
+    flex-wrap:wrap;
+    color:rgb(0, 0, 0);
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Poppins', sans-serif;
+}
+footer h2{
+    color: #5a93d8;
+    font-size: 30px;
+}
+
+.FooterContatos h2{
+    margin: 0.5em 0em;
+    font-family: 'Libre Baskerville', serif;
+}
+#email div{
+    display: flex;
+    align-items: center;
+}
+#email h4{
+    margin: 0.5em 0em;
+}
+#redesSociais a{
+
+    color: #ffffff;
+
+}
+#redesSociais div{
+    align-items: center;
+}
+
+#endereco p{
+    margin:0.5em 0em;
+}
