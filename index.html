@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovani | Creative Developer</title>
+    <meta name="description" content="Portfolio of a creative developer specializing in modern web technologies.">
+
+    <!-- Fonts: Fira Code for code, Inter for UI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <div class="app-container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">&lt;Giovani Zanella da Maia /&gt;</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about"><span class="hash">#</span>sobre</a></li>
+                <li><a href="#stack"><span class="hash">#</span>tecnologias</a></li>
+                <li><a href="#projects"><span class="hash">#</span>Projetos</a></li>
+                <li><a href="#contact"><span class="hash">#</span>contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <header id="about" class="hero">
+            <div class="hero-content">
+                <p class="comment">// Bem-vindo(a) ao meu portfólio</p>
+                <h1 class="glitch-text">Olá, eu sou <span class="accent" data-text="Giovani"> Giovani</span></h1>
+                <h2 id="typewriter"></h2>
+                <p class="hero-desc">
+                    Explorando a <span class="text-highlight">Ciência da Computação</span> com foco em
+                    <span class="text-highlight">Desenvolvimento de Software</span>,
+                    <span class="text-highlight">Estruturas de Dados</span> e
+                    <span class="text-highlight">Sistemas Web</span>.
+                </p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">view_projects()</a>
+                    <a href="#contact" class="btn btn-secondary">contact_me()</a>
+                </div>
+            </div>
+            <div class="hero-decoration">
+                <div class="code-snippet">
+                    <div class="window-controls">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code>
+<span class="keyword">class</span> <span class="class-name">Developer</span> {
+  <span class="keyword">constructor</span>() {
+    <span class="this">this</span>.name = <span class="string">"Giovani"</span>;
+    <span class="this">this</span>.role = <span class="string">"Full Stack"</span>;
+    <span class="this">this</span>.coffee = <span class="boolean">true</span>;
+  }
+
+  <span class="function">code</span>() {
+    <span class="keyword">return</span> <span class="string">"Building the future..."</span>;
+  }
+}
+                    </code></pre>
+                </div>
+            </div>
+        </header>
+
+        <!-- Tech Stack -->
+        <section id="stack" class="section">
+            <h2 class="section-title">Technologies</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-card">
+                    <i class="devicon-typescript-plain colored"></i>
+                    <span>TypeScript</span>
+                </div>
+                <div class="tech-card">
+                    <i class="devicon-python-plain colored"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-card">
+                    <i class="devicon-react-original colored"></i>
+                    <span>React</span>
+                </div>
+                <div class="tech-card">
+                    <i class="devicon-nodejs-plain-wordmark colored"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-card">
+                    <i class="devicon-git-plain colored"></i>
+                    <span>Git</span>
+                </div>
+                <div class="tech-card">
+                    <i class="devicon-docker-plain colored"></i>
+                    <span>Docker</span>
+                </div>
+                <div class="tech-card">
+                    <i class="devicon-postgresql-plain colored"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="tech-card">
+                    <i class="devicon-vuejs-plain colored"></i>
+                    <span>Vue</span>
+                </div>
+                <div class="tech-card">
+                    <i class="devicon-figma-plain colored"></i>
+                    <span>Figma</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="card-image">
+                        <div class="img-placeholder gradient-1"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-desc">A full-featured shopping platform built with Next.js and Stripe.</p>
+                        <ul class="project-tags">
+                            <li>Next.js</li>
+                            <li>Stripe</li>
+                            <li>Tailwind</li>
+                        </ul>
+                    </div>
+                    <div class="card-details">
+                        <h4>About the Project</h4>
+                        <p>A comprehensive e-commerce solution featuring real-time inventory management, secure payments
+                            via Stripe, and a custom dashboard for admins. Built with performance and scalability in
+                            mind.</p>
+                        <div class="detail-links">
+                            <a href="#" target="_blank" class="btn btn-primary">View Live</a>
+                            <a href="#" target="_blank" class="btn btn-secondary">GitHub Repo</a>
+                        </div>
+                        <button class="close-btn" aria-label="Close details">×</button>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="card-image">
+                        <div class="img-placeholder gradient-2"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">Task Management UI</h3>
+                        <p class="project-desc">Real-time collaborative task manager using WebSockets.</p>
+                        <ul class="project-tags">
+                            <li>Vue 3</li>
+                            <li>Firebase</li>
+                            <li>SCSS</li>
+                        </ul>
+                    </div>
+                    <div class="card-details">
+                        <h4>About the Project</h4>
+                        <p>A Trello-like task board allowing multiple users to collaborate in real-time. Features
+                            drag-and-drop organization, instant updates, and team permissions.</p>
+                        <div class="detail-links">
+                            <a href="#" target="_blank" class="btn btn-primary">View Live</a>
+                            <a href="#" target="_blank" class="btn btn-secondary">GitHub Repo</a>
+                        </div>
+                        <button class="close-btn" aria-label="Close details">×</button>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="card-image">
+                        <div class="img-placeholder gradient-3"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">AI Chat Interface</h3>
+                        <p class="project-desc">Responsive chat interface for LLM interaction.</p>
+                        <ul class="project-tags">
+                            <li>React</li>
+                            <li>OpenAI API</li>
+                            <li>Vite</li>
+                        </ul>
+                    </div>
+                    <div class="card-details">
+                        <h4>About the Project</h4>
+                        <p>A clean, markdown-supported chat interface for connecting with various LLMs. Includes history
+                            management, code highlighting, and streaming responses.</p>
+                        <div class="detail-links">
+                            <a href="#" target="_blank" class="btn btn-primary">View Live</a>
+                            <a href="#" target="_blank" class="btn btn-secondary">GitHub Repo</a>
+                        </div>
+                        <button class="close-btn" aria-label="Close details">×</button>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card">
+                    <div class="card-image">
+                        <div class="img-placeholder gradient-4"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">AI Chat Interface</h3>
+                        <p class="project-desc">Responsive chat interface for LLM interaction.</p>
+                        <ul class="project-tags">
+                            <li>React</li>
+                            <li>OpenAI API</li>
+                            <li>Vite</li>
+                        </ul>
+                    </div>
+                    <div class="card-details">
+                        <h4>About the Project</h4>
+                        <p>A clean, markdown-supported chat interface for connecting with various LLMs. Includes history
+                            management, code highlighting, and streaming responses.</p>
+                        <div class="detail-links">
+                            <a href="#" target="_blank" class="btn btn-primary">View Live</a>
+                            <a href="#" target="_blank" class="btn btn-secondary">GitHub Repo</a>
+                        </div>
+                        <button class="close-btn" aria-label="Close details">×</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">QUAL O PRÓXIMO PASSO ?</h2>
+
+            <div class="contact-content">
+                <p class="contact-label">Vamos trabalhar juntos.</p>
+                <a href="mailto:hello@giovani.dev" class="big-email-link">giovanizanellaes@gmail.com</a>
+                <p class="contact-desc">
+                    I'm currently available for freelance work and open to new opportunities.
+                    If you have a project in mind, let's chat.
+                </p>
+
+                <div class="social-links">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Built with <span class="heart">♥</span> & code by Giovani</p>
+        </footer>
+    </div>
+
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
